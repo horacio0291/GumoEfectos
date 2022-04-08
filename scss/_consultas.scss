@@ -1,0 +1,73 @@
+.gridContainerConsultas {
+  @include grid-container(
+    grid,
+    100vh 1fr 1fr 20vh,
+    "header" "consultas" "contacto" "footer"
+  );
+  .heroImage{
+    .mask{
+      .d-flex{
+        .text-white{
+          .mb-3{
+            font-size: 2.7rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.consultas {
+  grid-area: consultas;
+  color: $textColor;
+  margin-bottom: 8rem;
+  .consultasFormulario {
+    height: 100vh;
+    @include flex-container(flex, column, space-between, center);
+    h2 {
+      margin-top: 2.5rem;
+      font-size: 2rem;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 80vw;
+      height: 8vh;
+      text-align: center;
+      border: 2px solid #808080;
+      border-radius: 2px;
+    }
+    .consultasFormularioConsulta {
+      textarea {
+        width: 80vw;
+        height: 20vh;
+        font-size: 1rem;
+        border: 2px solid #808080;
+        border-radius: 2px;
+      }
+    }
+    .consultasFormularioSubmit {
+      input[type="submit"] {
+        position: relative;
+        display: inline-block;
+        margin: 15px;
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: $textColor;
+        background: transparent;
+        cursor: pointer;
+        transition: ease-out 0.5s;
+        border-radius: 30px;
+        border: 2px solid map-get($map: $borders, $key: whiteBorders);
+        border-radius: 10px;
+        box-shadow: inset 0 0 0 0 #fff;
+        &:hover {
+          color: #fff;
+          box-shadow: inset 0 -100px 0 0 #1a181f;
+        }
+      }
+    }
+  }
+}

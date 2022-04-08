@@ -1,0 +1,499 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,400&family=Roboto:wght@300;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold; }
+  a:hover {
+    color: #eedbc3; }
+
+body {
+  background-color: #000;
+  background-image: url(../img/fondo.jpeg);
+  color: #fff; }
+
+/* *************************WHATSAPP************************ */
+.container-boton {
+  background-color: #fff;
+  border: 1px solid #fff;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 10px;
+  transition: ease 0.3s;
+  animation: efecto 1.2s infinite; }
+
+.container-boton:hover {
+  transform: scale(1.1);
+  transition: 0.3s; }
+
+.boton {
+  width: 40px;
+  transition: ease 1s; }
+
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85); }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0); } }
+
+/* *************************WHATSAPP************************ */
+.gridContainer {
+  display: grid;
+  grid-template-rows: 100vh 1fr 0.3fr 0.5fr 0.4fr 0.5fr 30vh;
+  grid-template-areas: "header" "pasos" "carrusel" "experiencias" "informacion" "contacto" "footer"; }
+
+/* *************************NAVBAR************************ */
+.header {
+  grid-area: header;
+  overflow-y: hidden; }
+  .header .navbar .collapse .navbar-nav .nav-item a {
+    color: #fff; }
+    .header .navbar .collapse .navbar-nav .nav-item a:hover {
+      color: #eedbc3; }
+  .header .navbar .container-fluid .navbar-brand img {
+    width: 4.5rem;
+    border-radius: 50%; }
+
+/* *************************NAVBAR************************ */
+/* *************************HEROIMAGE********************** */
+.heroImage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero-image-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%; }
+  .heroImage .mask .d-flex .text-white h1 {
+    margin-top: 30vh;
+    font-weight: bold;
+    font-size: 3rem; }
+
+/* *************************HEROIMAGE********************** */
+/* *************************PASOS A SEGUIR**************** **/
+.pasos {
+  grid-area: pasos;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold; }
+  .pasos figure {
+    text-align: center;
+    margin-bottom: 6rem; }
+    .pasos figure img {
+      width: 70%;
+      height: auto;
+      border-radius: 1rem; }
+
+/* *************************PASOS A SEGUIR**************** **/
+/* *************************CARRUSEL*********************** */
+.carouselContainer {
+  grid-area: carrusel; }
+
+/* *************************CARRUSEL*********************** */
+/* *************************EXPERIENCIAS******************** */
+.experiencias {
+  grid-area: experiencias; }
+  .experiencias .row .opiniones img {
+    width: 100%;
+    border: 3px solid #fff; }
+
+/* *************************EXPERIENCIAS******************** */
+/* *************************INFORMACIÓN********************* */
+.informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-area: informacion;
+  text-align: center; }
+
+/* *************************INFORMACIÓN********************* */
+/* *************************CONTACTO************************ */
+.contacto {
+  grid-area: contacto; }
+  .contacto .logoLg img {
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 1rem; }
+  .contacto img {
+    width: 1rem;
+    height: auto; }
+
+.redes {
+  margin-top: 1.5rem; }
+  .redes img {
+    width: 1.5rem; }
+  .redes a {
+    margin-right: 0.5rem; }
+
+.infoContacto .datos h2 {
+  font-size: 1.2rem; }
+
+.infoContacto .datos h3 {
+  font-size: 1rem; }
+
+/* *************************CONTACTO************************ */
+/* *************************FOOTER************************** */
+.footer {
+  grid-area: footer;
+  background-color: #000;
+  text-align: center;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/* *************************FOOTER************************** */
+.gridContainerEfectos {
+  display: grid;
+  grid-template-rows: 100vh 1fr 0.31fr 20vh;
+  grid-template-areas: "header" "pedales" "contacto" "footer"; }
+
+.pedales {
+  grid-area: pedales;
+  margin-bottom: 5rem; }
+  .pedales .pedalesSeleccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .pedales .pedalesSeleccion .pedalesSeleccionOpciones {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5rem; }
+      .pedales .pedalesSeleccion .pedalesSeleccionOpciones label {
+        font-size: 1.5rem;
+        font-weight: bold; }
+        .pedales .pedalesSeleccion .pedalesSeleccionOpciones label img {
+          width: 85%;
+          height: auto; }
+
+.pedales .pedalesSeleccion .pedalesSeleccionOpciones {
+  transition: all 0.5s; }
+  .pedales .pedalesSeleccion .pedalesSeleccionOpciones:hover {
+    transform: scale(1.01);
+    cursor: pointer; }
+  .pedales .pedalesSeleccion .pedalesSeleccionOpciones img {
+    cursor: pointer; }
+  .pedales .pedalesSeleccion .pedalesSeleccionOpciones input[type="checkbox"]:checked + label img {
+    border: 5px inset rgba(240, 8, 8, 0.432); }
+
+.pedales .pedalesSeleccion .pedalesSeleccionComprar {
+  width: 100vw;
+  display: flex;
+  justify-content: center; }
+  .pedales .pedalesSeleccion .pedalesSeleccionComprar input[type="submit"] {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #fff; }
+    .pedales .pedalesSeleccion .pedalesSeleccionComprar input[type="submit"]:hover {
+      color: #fff;
+      box-shadow: inset 0 -100px 0 0 #1a181f;
+      cursor: pointer; }
+
+.gridContainerVideos {
+  display: grid;
+  grid-template-rows: 100vh 1fr 0.4fr 20vh;
+  grid-template-areas: "header" "videos" "contacto" "footer"; }
+
+.containerVideos {
+  grid-area: videos;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.videos iframe {
+  width: 100vw;
+  height: auto; }
+
+.videosContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%; }
+
+.videosTextos {
+  margin-bottom: 5rem;
+  text-align: center;
+  width: 90%; }
+
+.gridContainerEnvios {
+  display: grid;
+  grid-template-rows: 100vh 1fr 1fr 20vh;
+  grid-template-areas: "header" "envios" "contacto" "footer"; }
+
+.enviosContainer {
+  grid-area: envios;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+  .enviosContainer .envios {
+    margin-bottom: 2rem; }
+    .enviosContainer .envios h2 {
+      font-weight: bold; }
+  .enviosContainer .enviosCp input[type="text"] {
+    width: 50%;
+    margin-bottom: 1rem;
+    text-align: center; }
+  .enviosContainer .enviosCp input[type="button"] {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #fff; }
+    .enviosContainer .enviosCp input[type="button"]:hover {
+      color: #fff;
+      box-shadow: inset 0 -100px 0 0 #1a181f; }
+
+.gridContainerConsultas {
+  display: grid;
+  grid-template-rows: 100vh 1fr 1fr 20vh;
+  grid-template-areas: "header" "consultas" "contacto" "footer"; }
+  .gridContainerConsultas .heroImage .mask .d-flex .text-white .mb-3 {
+    font-size: 2.7rem; }
+
+.consultas {
+  grid-area: consultas;
+  color: #fff;
+  margin-bottom: 8rem; }
+  .consultas .consultasFormulario {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .consultas .consultasFormulario h2 {
+      margin-top: 2.5rem;
+      font-size: 2rem; }
+    .consultas .consultasFormulario input[type="text"],
+    .consultas .consultasFormulario input[type="email"] {
+      width: 80vw;
+      height: 8vh;
+      text-align: center;
+      border: 2px solid #808080;
+      border-radius: 2px; }
+    .consultas .consultasFormulario .consultasFormularioConsulta textarea {
+      width: 80vw;
+      height: 20vh;
+      font-size: 1rem;
+      border: 2px solid #808080;
+      border-radius: 2px; }
+    .consultas .consultasFormulario .consultasFormularioSubmit input[type="submit"] {
+      position: relative;
+      display: inline-block;
+      margin: 15px;
+      padding: 15px 30px;
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: #fff;
+      background: transparent;
+      cursor: pointer;
+      transition: ease-out 0.5s;
+      border-radius: 30px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      box-shadow: inset 0 0 0 0 #fff; }
+      .consultas .consultasFormulario .consultasFormularioSubmit input[type="submit"]:hover {
+        color: #fff;
+        box-shadow: inset 0 -100px 0 0 #1a181f; }
+
+/* *************************Media Query Moble XL************ */
+@media screen and (min-width: 481px) {
+  #gridContainer {
+    grid-template-rows: 100vh 1fr 0.4fr 0.5fr 0.4fr 0.5fr 20vh; }
+  .videosContainer .videos iframe {
+    width: 90vw;
+    height: 30vh; } }
+
+/* *************************Media Query Moble XL************ */
+/* *************************Media Query Tablet xs*********** */
+@media screen and (min-width: 581px) {
+  #gridContainer {
+    grid-template-rows: 100vh 1fr 0.4fr 0.55fr 0.4fr 0.5fr 20vh; }
+  .mapa {
+    width: 100%; }
+    .mapa p {
+      font-size: 1.5rem; }
+    .mapa iframe {
+      width: 90%;
+      height: 20rem; }
+  .garantia h3 {
+    font-size: 2rem; }
+  .garantia p {
+    font-size: 1.5rem; }
+  .mediosDePago h3 {
+    font-size: 2rem; }
+  .mediosDePago p {
+    font-size: 1.5rem; }
+  .mediosDePagoTarjetas img {
+    width: 3rem;
+    height: auto; }
+  .mediosDePagoTarjetas .tarjetas img {
+    width: 3rem;
+    height: auto; }
+  .errorContainer {
+    max-width: 80%; } }
+
+/* *************************Media Query Tablet xs*********** */
+/* *************************Media Query Tablet md*********** */
+@media screen and (min-width: 681px) {
+  #gridContainer {
+    grid-template-rows: 100vh 1fr 0.45fr 0.65fr 0.4fr 0.5fr 20vh; }
+  .pasos figcaption h2 {
+    font-size: 2rem; }
+  .pasos figcaption h3 {
+    font-size: 1.8rem; }
+  .pasos figcaption p {
+    font-size: 1.5rem; }
+    .pasos figcaption p a {
+      font-size: 2rem; }
+  .linksIndex li a {
+    font-size: 1.5rem; }
+  .linksPedales li a {
+    font-size: 1.5rem; }
+  .infoContacto .datos h2 {
+    font-size: 2rem; }
+  .infoContacto .datos h3 {
+    font-size: 1rem; }
+  #gridContainerVideos {
+    grid-template-rows: 100vh 1fr 0.5fr 20vh; }
+  .videosContainer .videos iframe {
+    height: 50vh; } }
+
+/* *************************Media Query Tablet md*********** */
+/* *************************Media Query Tablet lg*********** */
+@media screen and (min-width: 768px) {
+  #gridContainer {
+    grid-template-rows: 100vh 1fr 0.5fr 0.7fr 0.4fr 0.6fr 20vh; }
+  .experiencias .row .opiniones img {
+    width: 90%; }
+  .carouselDimension {
+    width: 90%; }
+  .pedales .pedalesSeleccion .pedalesSeleccionOpciones img {
+    width: 60%; }
+  #gridContainerEfectos {
+    grid-template-rows: 100vh 2fr 0.7fr 20vh; }
+  .errorContainer {
+    max-width: 70%; } }
+
+/* *************************Media Query Tablet lg*********** */
+/* *************************Media Query Laptop sm*********** */
+@media screen and (min-width: 920px) {
+  #gridContainer {
+    grid-template-rows: 100vh 1fr 0.5fr 0.7fr 0.4fr 0.6fr 20vh; }
+  .logoLg {
+    width: 25%; }
+  .errorContainer {
+    max-width: 60%; } }
+
+/* *************************Media Query Laptop sm*********** */
+/* *************************Media Query Laptop md*********** */
+@media screen and (min-width: 992px) {
+  #gridContainer {
+    grid-template-rows: 100vh 1fr 0.55fr 0.55fr 0.55fr 0.3fr 20vh; }
+  .mapa {
+    width: 33%;
+    height: auto; }
+  .contacto .row .logoLg img {
+    width: 100%; }
+  .pasos .pasoUno, .pasos .pasoDos, .pasos .pasoTres {
+    display: flex;
+    align-items: center; }
+    .pasos .pasoUno img, .pasos .pasoDos img, .pasos .pasoTres img {
+      width: 45%; }
+    .pasos .pasoUno figcaption, .pasos .pasoDos figcaption, .pasos .pasoTres figcaption {
+      margin-left: 1rem; }
+  .pasos .pasoDos {
+    flex-direction: row-reverse; }
+    .pasos .pasoDos img {
+      width: 45%; }
+    .pasos .pasoDos figcaption {
+      margin-right: 1rem; }
+  .pasos .pasoTres img {
+    width: 45%; }
+  .pasos .pasoTres figcaption {
+    margin-left: 1rem; }
+  .carouselDimension {
+    width: 70%; }
+  .pedales .pedalesSeleccion .pedalesSeleccionOpciones img {
+    width: 100%; }
+  .videosContainer .videos iframe {
+    width: 70vw;
+    height: 80vh; }
+  #gridContainerVideos {
+    grid-template-rows: 100vh 1fr 0.15fr 20vh; }
+  #gridContainerConsultas {
+    grid-template-rows: 100vh 1fr 0.5fr 20vh; }
+  .errorContainer {
+    width: 40%; } }
+
+/* *************************Media Query Laptop md*********** */
+.button {
+  position: relative;
+  display: inline-block;
+  margin: 30px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #fff; }
+  .button:hover {
+    color: #fff;
+    box-shadow: inset 0 -100px 0 0 #1a181f; }

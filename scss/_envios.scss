@@ -1,0 +1,54 @@
+.gridContainerEnvios {
+  @include grid-container(
+    grid,
+    100vh 1fr 1fr 20vh,
+    "header" "envios" "contacto" "footer"
+  );
+}
+
+
+.enviosContainer {
+  grid-area: envios;
+  @include flex-container(flex, column, center, center);
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  .envios {
+    margin-bottom: 2rem;
+    h2 {
+      font-weight: bold;
+    }
+  }
+  .enviosCp {
+    input[type="text"] {
+      width: 50%;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    input[type="button"] {
+      position: relative;
+      display: inline-block;
+      margin: 15px;
+      padding: 15px 30px;
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: $textColor;
+      background: transparent;
+      cursor: pointer;
+      transition: ease-out 0.5s;
+      border-radius: 30px;
+      border: 2px solid map-get($map: $borders, $key:whiteBorders );
+      border-radius: 10px;
+      box-shadow: inset 0 0 0 0 #fff;
+      &:hover {
+        color: $textColor;
+        box-shadow: inset 0 -100px 0 0 #1a181f;
+      }
+    }
+  }
+}
+
+

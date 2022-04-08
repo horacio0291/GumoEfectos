@@ -1,0 +1,13 @@
+SEO
+
+- Descipción: Con la etiqueta meta name description, agregué la siguiente información que resumen el tema de la pagina. 
+"Pedales de efecto. Construimos nuestros pedales con componentes de primera calidad y verificados uno por uno."
+Tambien sume una pequeña descripción a cada sección explicando brevemente lo que se puede hacer en cada una.
+
+-Keywords: Agregué las siguientes palabras clave. "PEDALES, INDUSTRIA NACIONAL, GUITARRAS, MUSICA, ARTE, BANDAS, ARTISTAS, EFECTOS"
+
+-Encabezado: Cada sección comienza con una heroimage con el encabezado correspondiente.
+
+-Título: Agregué títulos que especifican el motivo de la página
+
+Pedales de industria nacional | Gumo Efectos

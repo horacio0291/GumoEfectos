@@ -1,0 +1,283 @@
+//MEDIA QUERYS --------------------------------------------->
+
+/* *************************Media Query Moble XL************ */
+
+@media screen and (min-width: 481px) {
+  #gridContainer {
+    grid-template-rows: 100vh 1fr 0.4fr 0.5fr 0.4fr 0.5fr 20vh;
+  }
+
+  .videosContainer {
+    .videos {
+      iframe {
+        width: 90vw;
+        height: 30vh;
+      }
+    }
+  }
+}
+/* *************************Media Query Moble XL************ */
+
+/* *************************Media Query Tablet xs*********** */
+@media screen and (min-width: 581px) {
+  #gridContainer {
+    grid-template-rows: 100vh 1fr 0.4fr 0.55fr 0.4fr 0.5fr 20vh;
+  }
+
+  .mapa {
+    width: 100%;
+    p {
+      font-size: 1.5rem;
+    }
+    iframe {
+      width: 90%;
+      height: 20rem;
+    }
+  }
+
+  .garantia {
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .mediosDePago {
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .mediosDePagoTarjetas {
+    img {
+      width: 3rem;
+      height: auto;
+    }
+    .tarjetas {
+      img {
+        width: 3rem;
+        height: auto;
+      }
+    }
+  }
+
+  .errorContainer{
+    max-width: 80%;
+  }
+}
+/* *************************Media Query Tablet xs*********** */
+
+/* *************************Media Query Tablet md*********** */
+
+@media screen and (min-width: 681px) {
+  #gridContainer {
+    grid-template-rows: 100vh 1fr 0.45fr 0.65fr 0.4fr 0.5fr 20vh;
+  }
+
+  .pasos {
+    figcaption {
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1.5rem;
+        a {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .linksIndex {
+    li {
+      a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .linksPedales {
+    li {
+      a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .infoContacto {
+    .datos {
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  #gridContainerVideos {
+    grid-template-rows: 100vh 1fr 0.5fr 20vh;
+  }
+
+  .videosContainer {
+    .videos {
+      iframe {
+        height: 50vh;
+      }
+    }
+  }
+}
+/* *************************Media Query Tablet md*********** */
+
+/* *************************Media Query Tablet lg*********** */
+@media screen and (min-width: 768px) {
+  #gridContainer {
+    grid-template-rows: 100vh 1fr 0.5fr 0.7fr 0.4fr 0.6fr 20vh;
+  }
+
+  .experiencias {
+    .row {
+      .opiniones {
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  .carouselDimension {
+    width: 90%;
+  }
+
+  .pedales {
+    .pedalesSeleccion {
+      .pedalesSeleccionOpciones {
+        img {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  #gridContainerEfectos {
+    grid-template-rows: 100vh 2fr 0.7fr 20vh;
+  }
+
+  .errorContainer{
+    max-width: 70%;
+  }
+}
+/* *************************Media Query Tablet lg*********** */
+
+/* *************************Media Query Laptop sm*********** */
+@media screen and (min-width: 920px) {
+  #gridContainer {
+    grid-template-rows: 100vh 1fr 0.5fr 0.7fr 0.4fr 0.6fr 20vh;
+  }
+  .logoLg {
+    width: 25%;
+  }
+
+  .errorContainer{
+    max-width: 60%;
+  }
+}
+/* *************************Media Query Laptop sm*********** */
+
+/* *************************Media Query Laptop md*********** */
+@media screen and (min-width: 992px) {
+  #gridContainer {
+    grid-template-rows: 100vh 1fr 0.55fr 0.55fr 0.55fr 0.3fr 20vh;
+  }
+
+  .mapa {
+    width: 33%;
+    height: auto;
+  }
+
+  .contacto {
+    .row {
+      .logoLg {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .pasos {
+    .pasoUno {
+      display: flex;
+      align-items: center;
+      img {
+        width: 45%;
+      }
+      figcaption {
+        margin-left: 1rem;
+      }
+    }
+    .pasoDos {
+      @extend .pasoUno;
+      flex-direction: row-reverse;
+      img {
+        width: 45%;
+      }
+      figcaption {
+        margin-right: 1rem;
+      }
+    }
+    .pasoTres {
+      @extend .pasoUno;
+      img {
+        width: 45%;
+      }
+      figcaption {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .carouselDimension {
+    width: 70%;
+  }
+
+  .pedales {
+    .pedalesSeleccion {
+      .pedalesSeleccionOpciones {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .videosContainer {
+    .videos {
+      iframe {
+        width: 70vw;
+        height: 80vh;
+      }
+    }
+  }
+
+  #gridContainerVideos {
+    grid-template-rows: 100vh 1fr 0.15fr 20vh;
+  }
+
+  #gridContainerConsultas {
+    grid-template-rows: 100vh 1fr 0.5fr 20vh;
+  }
+
+  .errorContainer{
+    width: 40%;
+  }
+}
+/* *************************Media Query Laptop md*********** */

@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,400&family=Roboto:wght@300;700&display=swap");
+//VARIABLES ------------>
+
+$linksColors: #fff;
+$linksWeight: bold;
+$textColor: #fff;
+$textHover: #eedbc3;
+$bgColor: #000;
+$bgImage: url(../img/fondo.jpeg);
+$hrImage: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("../img/hero-image-2.jpg");
+
+//RESETEOS ------------>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $linksColors;
+  font-weight: bold;
+  &:hover {
+    color: $textHover;
+  }
+}
+
+body {
+  background-color: $bgColor;
+  background-image: $bgImage;
+  color: $textColor;
+}
+
+//MAPS ------------>
+
+$borders: (
+  whiteBorders: #fff,
+  selectionBorder: rgba(240, 8, 8, 0.432),
+);
+
+
+//MIXINS ------------>
+@mixin grid-container($display, $rows, $area) {
+  display: $display;
+  grid-template-rows: $rows;
+  grid-template-areas: $area;
+}
+
+@mixin flex-container($display, $direction, $justify, $align) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/* *************************WHATSAPP************************ */
+.container-boton {
+  background-color: #fff;
+  border: 1px solid map-get($map: $borders, $key:whiteBorders );
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 10px;
+  transition: ease 0.3s;
+  animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.boton {
+  width: 40px;
+  transition: ease 1s;
+}
+
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
+/* *************************WHATSAPP************************ */
+
